@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Elite Fazer Lucro - Links Oficiais</title>
+    <style>
+        /* Estilos básicos para mobile-first */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #010409; /* Preto GitHub */
+            color: #e6edf3;
+            display: flex;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        /* Container principal */
+        .container {
+            width: 100%;
+            max-width: 480px; /* Limita largura em telas grandes */
+            height: 100vh;
+            background-color: #010409;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* Imagem de Fundo Completa */
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* AQUI ESTÁ A MÁGICA: Link para a imagem de fundo que gerei */
+            background-image: url('https://raw.githubusercontent.com/Viiniii7/elite-fazer-lucro/main/fundo.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1; /* Fica atrás de tudo */
+        }
+
+        /* Elementos que ficam na frente da imagem */
+        .content {
+            z-index: 10; /* Fica na frente */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: auto; /* Empurra o conteúdo para baixo na tela */
+            margin-bottom: 30px; /* Espaço do final da tela */
+        }
+
+        /* Botão estilizado (igual ao modelo) */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            max-width: 320px;
+            padding: 18px 0;
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #010409;
+            background: linear-gradient(180deg, #fcd34d 0%, #fbbf24 100%);
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+            border: none;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Icones nos botões */
+        .btn-icon {
+            margin-right: 12px;
+            font-size: 22px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Div da Imagem de Fundo (precisa carregar depois) -->
+        <div class="background-image"></div>
+
+        <!-- Conteúdo na Frente -->
+        <div class="content">
+            
+            <!-- Link da Corretora Polarium -->
+            <a href="https://trade.polariumbroker.com/register?aff=433880&aff_model=revenue&afftrack=" target="_blank" class="btn">
+                <span class="btn-icon">💎</span> CADASTRAR NA CORRETORA
+            </a>
+
+            <!-- Link do Telegram -->
+            <a href="https://t.me/elitedolucroo" target="_blank" class="btn">
+                <span class="btn-icon">🚀</span> ENTRAR NO TELEGRAM
+            </a>
+            
+        </div>
+    </div>
+
+</body>
+</html>
